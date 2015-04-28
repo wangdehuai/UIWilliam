@@ -38,4 +38,3 @@ FOUNDATION_EXPORT const unsigned char UIWilliamVersionString[];
 #import <UIWilliam/BaseTableView.h>
 #import <UIWilliam/BaseTextField.h>
 #import <UIWilliam/BaseAlertView.h>
-#import <UIWilliam/UIImageView+WebCache.h>

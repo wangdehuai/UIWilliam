@@ -84,7 +84,7 @@
 		79D1EBC31AEF2D71004DF70D /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 79D1EBA21AEF2D71004DF70D /* UIImage+MultiFormat.h */; };
 		79D1EBC41AEF2D71004DF70D /* UIImage+WebP.h in Headers */ = {isa = PBXBuildFile; fileRef = 79D1EBA31AEF2D71004DF70D /* UIImage+WebP.h */; };
 		79D1EBC51AEF2D71004DF70D /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 79D1EBA41AEF2D71004DF70D /* UIImageView+HighlightedWebCache.h */; };
-		79D1EBC61AEF2D71004DF70D /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 79D1EBA51AEF2D71004DF70D /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79D1EBC61AEF2D71004DF70D /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 79D1EBA51AEF2D71004DF70D /* UIImageView+WebCache.h */; };
 		79D1EBC71AEF2D71004DF70D /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 79D1EBA61AEF2D71004DF70D /* UIView+WebCacheOperation.h */; };
 /* End PBXBuildFile section */
 
@@ -376,9 +376,9 @@
 				79D1EB6B1AEF1C6C004DF70D /* BaseAlertView.h in Headers */,
 				79D1EB6F1AEF1C6C004DF70D /* BaseLine.h in Headers */,
 				79D1EBC21AEF2D71004DF70D /* UIImage+GIF.h in Headers */,
-				79D1EBC61AEF2D71004DF70D /* UIImageView+WebCache.h in Headers */,
 				79D1EB6D1AEF1C6C004DF70D /* BaseButton.h in Headers */,
 				79D1EB7D1AEF1C6C004DF70D /* NavLogoView.h in Headers */,
+				79D1EBC61AEF2D71004DF70D /* UIImageView+WebCache.h in Headers */,
 				79D1EB7A1AEF1C6C004DF70D /* BaseViewController.h in Headers */,
 				79D1EBBF1AEF2D71004DF70D /* SDWebImageOperation.h in Headers */,
 				79D1EB711AEF1C6C004DF70D /* BaseMD5.h in Headers */,

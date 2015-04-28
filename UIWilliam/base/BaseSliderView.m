@@ -11,10 +11,11 @@
 
 @implementation BaseSliderView
 {
+    NSArray *titles;
     NSArray *urls;
     BaseViewController *vc;
 }
-- (instancetype)initWithFrame:(CGRect)frame Btns:(NSArray *)Btns Urls:(NSArray *)Urls Target:(id)Target
+- (instancetype)initWithFrame:(CGRect)frame Btns:(NSArray *)Btns Urls:(NSArray *)Urls Titles:(NSArray *)TITLES Target:(id)Target
 {
     self = [super initWithFrame:frame];
     if (self) {
@@ -40,6 +41,7 @@
             [self addSubview:btn];
         }
         
+        titles = TITLES;
         urls = Urls;
         vc = (BaseViewController *)Target;
     }
@@ -49,6 +51,7 @@
 -(void)btnClick:(id)sender{
     UIButton *btn = (UIButton *)sender;
     BaseWebViewController *webV = [[BaseWebViewController alloc] init];
+    [webV setTitle:titles[btn.tag]];
     [webV setUrlStr:[NSString stringWithFormat:@"%@",urls[btn.tag]]];
     [vc.navigationController pushViewController:webV animated:YES];
 }
