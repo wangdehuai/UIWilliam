@@ -1,0 +1,158 @@
+#ifndef UIWilliam_pch
+#define UIWilliam_pch
+
+#import <UIKit/UIKit.h>
+
+#import "BaseMD5.h"
+#import "BaseModel.h"
+#import "BaseArchived.h"
+#import "BaseLabel.h"
+#import "BaseButton.h"
+#import "BaseLine.h"
+#import "BaseTabbarController.h"
+#import "BaseViewController.h"
+#import "BaseNavController.h"
+#import "BaseWebViewController.h"
+#import "NavLogoView.h"
+#import "GroupedTableViewController.h"
+#import "PlainTableViewController.h"
+#import "BaseLRTableViewController.h"
+#import "BasePageControl.h"
+#import "BaseSliderView.h"
+#import "BaseScrollView.h"
+#import "BaseSegmentedControl.h"
+#import "BaseTableView.h"
+#import "BaseTextField.h"
+#import "BaseAlertView.h"
+
+#define PICNUM 3
+//获取版本
+#define OSVERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+#define OSDEVICE [[UIDevice currentDevice] userInterfaceIdiom]
+
+//获取设备（ipad）
+#define DEVICE_PAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
+//获取设备的物理高宽
+#define SCREEN_HEIGHT [[UIScreen mainScreen]bounds].size.height
+#define SCREEN_WIDTH [[UIScreen mainScreen]bounds].size.width
+
+//判断 设备  iphone5
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+//判断 设备  iphone6
+#define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) || CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size)) : NO)
+//判断 设备  iphone6 plus
+#define iPhone6plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(1125, 2001), [[UIScreen mainScreen] currentMode].size) || CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size)) : NO)
+
+//APP Frame
+#define APP_HEIGHT [[UIScreen mainScreen]applicationFrame].size.height
+#define APP_WIDTH [[UIScreen mainScreen]applicationFrame].size.width
+
+#define APP_SCALE_H  ([[UIScreen mainScreen]applicationFrame].size.height/480.0)
+#define APP_SCALE_W  ([[UIScreen mainScreen]applicationFrame].size.width/320.0)
+
+//坐标
+#define SCREEN_WIDTH_20 (SCREEN_WIDTH-20)
+#define SCREEN_WIDTH_30 (SCREEN_WIDTH-30)
+#define SCREEN_WIDTH_40 (SCREEN_WIDTH-40)
+
+#define SCREEN_WIDTH_HALF (SCREEN_WIDTH/2)
+
+#define SCREEN_WIDTH_HALF_20 (SCREEN_WIDTH/2-20)
+#define SCREEN_WIDTH_HALF_40 (SCREEN_WIDTH/2-40)
+
+//空字符串
+#define EMPTY_STRING @""
+
+//定制字体
+#define CUSTOM_FONT(s) [UIFont fontWithName:@"HelveticaNeue-Thin" size:s]
+//普通字体
+#define FONT(s) [UIFont systemFontOfSize:s]
+//加粗字体
+#define BLOD_FONT(s) [UIFont boldSystemFontOfSize:s]
+
+// UIImage  UIImageView
+#define IMG(name) [UIImage imageNamed:@name]
+#define IMGF(name) [UIImage imageNamedFixed:@name]
+
+//系统颜色
+#define BLACK_COLOR         [UIColor blackColor]        // 黑色
+#define GRAY_COLOR          [UIColor grayColor]         // 灰色
+#define DARK_GRAY_COLOR     [UIColor darkGrayColor]     // 深灰色
+#define LIGHT_GRAYS_COLOR   [UIColor lightGrayColor]    // 浅灰色
+#define WHITE_COLOR         [UIColor whiteColor]        // 白色
+#define GRAY_COLOR          [UIColor grayColor]         // 灰色
+#define RED_COLOR           [UIColor redColor]          // 红色
+#define GREEN_COLOR         [UIColor greenColor]        // 绿色
+#define BLUE_COLOR          [UIColor blueColor]         // 蓝色
+#define CYAN_COLOR          [UIColor cyanColor]         // 青色
+#define YELLOW_COLOR        [UIColor yellowColor]       // 黄色
+#define MAGENTA_COLOR       [UIColor magentaColor]      // 紫红色
+#define ORANGE_COLOR        [UIColor orangeColor]       // 橘色
+#define PURPLE_COLOR        [UIColor purpleColor]       // 紫色
+#define BROWN_COLOR         [UIColor brownColor]        // 棕色
+#define CLEAR_COLOR         [UIColor clearColor]        // 清除颜色
+
+//全局背景
+#define COLOR_BG        [UIColor colorWithRed:235.0/255.0 green:235.0/255.0 blue:241.0/255.0 alpha:1.0]
+#define COLOR_THEME     [UIColor orangeColor]
+
+//阴影颜色
+#define COLOR_SHADOW    [UIColor colorWithRed:0.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:0.6]
+//shadowsoffset
+#define SHADOW_OFFSET(x,y) CGSizeMake(0.5, 0.5)
+
+//AppDelegate
+#define APP_DELEGATE     [(AppDelegate*)[UIApplication sharedApplication]  delegate]
+//UIApplication
+#define APP_SHARED            [UIApplication sharedApplication]
+#define ROOT_NAV_VC     (UINavigationController*)[[[[UIApplication sharedApplication] delegate] window] rootViewController]
+
+
+#define STR(key)            NSLocalizedString(key, nil)
+
+//路径
+#define PATH_OF_APP_HOME    NSHomeDirectory()
+#define PATH_OF_TEMP        NSTemporaryDirectory()
+#define PATH_OF_DOCUMENT    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+
+//获取元素 x & y
+#define MAX_X(view) (view.frame.origin.x)
+#define MAX_Y(view) (view.frame.origin.y)
+
+#define VIEW_Y_5(view) (view.frame.origin.y + 5)
+#define VIEW_Y_8(view) (view.frame.origin.y + 8)
+#define VIEW_Y_10(view) (view.frame.origin.y + 10)
+
+//获取元素 width & height
+#define VIEW_W(view)  (view.frame.size.width)
+#define VIEW_H(view)  (view.frame.size.height)
+
+//获取元素 x & y & width & height
+#define VIEW_X_W(view) (view.frame.origin.x + view.frame.size.width)
+#define VIEW_Y_H(view) (view.frame.origin.y + view.frame.size.height)
+
+//获取元素 x & y & width & height + 5
+#define VIEW_X_W_1(view) (view.frame.origin.x + view.frame.size.width + 1)
+#define VIEW_Y_H_1(view) (view.frame.origin.y + view.frame.size.height + 1)
+//获取元素 x & y & width & height + 5
+#define VIEW_X_W_5(view) (view.frame.origin.x + view.frame.size.width + 5)
+#define VIEW_Y_H_5(view) (view.frame.origin.y + view.frame.size.height + 5)
+
+//获取元素 x & y & width & height + 10
+#define VIEW_X_W_10(view) (view.frame.origin.x + view.frame.size.width + 10)
+#define VIEW_Y_H_10(view) (view.frame.origin.y + view.frame.size.height + 10)
+
+//获取元素 x & y & width & height + 15
+#define VIEW_X_W_15(view) (view.frame.origin.x + view.frame.size.width + 15)
+#define VIEW_Y_H_15(view) (view.frame.origin.y + view.frame.size.height + 15)
+
+//获取元素 x & y & width & height + 20
+#define VIEW_X_W_20(view) (view.frame.origin.x + view.frame.size.width + 20)
+#define VIEW_Y_H_20(view) (view.frame.origin.y + view.frame.size.height + 20)
+
+
+#define isFirstIn ![[NSUserDefaults standardUserDefaults] boolForKey:@"firstStart"]
+
+
+#endif
