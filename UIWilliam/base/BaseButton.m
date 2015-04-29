@@ -15,7 +15,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self setBackgroundColor:COLOR_THEME];
-        [self.layer setCornerRadius:4];
+//        [self.layer setCornerRadius:4];         //默认圆角
         [self setTitleColor:WHITE_COLOR forState:UIControlStateNormal];
         [self setShowsTouchWhenHighlighted:YES];
     }
@@ -43,7 +43,6 @@
     [view addSubview:self];
 }
 
-
 -(void) setButtonTitle:(NSString *) title y:(float)theY theH:(float)theH  bgColor:(UIColor *)bgColor id:(id)id sel:(SEL)sel  view:(UIView *)view
 {
     [self setTitle:title forState:UIControlStateNormal];
@@ -53,7 +52,6 @@
     [self addTarget:id action:sel forControlEvents:UIControlEventTouchUpInside];
     [view addSubview:self];
 }
-
 
 -(void) setbuttonTitle:(NSString *) title theX:(float)thex theY:(float)theY theW:(float)theW theH:(float)theH tColor:(UIColor*)titleColor tFont:(UIFont*)font bgColor:(UIColor*)bgColor id:(id)id sel:(SEL)sel view:(UIView *)view
 {
