@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		79886CCA1AF0BA2200E42B86 /* BasePickView.h in Headers */ = {isa = PBXBuildFile; fileRef = 79886CC81AF0BA2200E42B86 /* BasePickView.h */; };
 		79886CCB1AF0BA2200E42B86 /* BasePickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79886CC91AF0BA2200E42B86 /* BasePickView.m */; };
+		7997FC8A1AF0C3F900A3FB78 /* YZMtextfield.h in Headers */ = {isa = PBXBuildFile; fileRef = 7997FC881AF0C3F900A3FB78 /* YZMtextfield.h */; };
+		7997FC8B1AF0C3F900A3FB78 /* YZMtextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = 7997FC891AF0C3F900A3FB78 /* YZMtextfield.m */; };
 		79D1EB141AEF1C0C004DF70D /* UIWilliam.h in Headers */ = {isa = PBXBuildFile; fileRef = 79D1EB131AEF1C0C004DF70D /* UIWilliam.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79D1EB1A1AEF1C0C004DF70D /* UIWilliam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D1EB0E1AEF1C0C004DF70D /* UIWilliam.framework */; };
 		79D1EB211AEF1C0C004DF70D /* UIWilliamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D1EB201AEF1C0C004DF70D /* UIWilliamTests.m */; };
@@ -103,6 +105,8 @@
 /* Begin PBXFileReference section */
 		79886CC81AF0BA2200E42B86 /* BasePickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasePickView.h; path = base/BasePickView.h; sourceTree = "<group>"; };
 		79886CC91AF0BA2200E42B86 /* BasePickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasePickView.m; path = base/BasePickView.m; sourceTree = "<group>"; };
+		7997FC881AF0C3F900A3FB78 /* YZMtextfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZMtextfield.h; sourceTree = "<group>"; };
+		7997FC891AF0C3F900A3FB78 /* YZMtextfield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZMtextfield.m; sourceTree = "<group>"; };
 		79D1EB0E1AEF1C0C004DF70D /* UIWilliam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIWilliam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79D1EB121AEF1C0C004DF70D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79D1EB131AEF1C0C004DF70D /* UIWilliam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIWilliam.h; sourceTree = "<group>"; };
@@ -304,6 +308,8 @@
 				79D1EB391AEF1C6C004DF70D /* BaseTableView.m */,
 				79D1EB4F1AEF1C6C004DF70D /* BaseTextField.h */,
 				79D1EB3A1AEF1C6C004DF70D /* BaseTextField.m */,
+				7997FC881AF0C3F900A3FB78 /* YZMtextfield.h */,
+				7997FC891AF0C3F900A3FB78 /* YZMtextfield.m */,
 				79D1EB411AEF1C6C004DF70D /* BaseAlertView.h */,
 				79D1EB2C1AEF1C6C004DF70D /* BaseAlertView.m */,
 				79886CC81AF0BA2200E42B86 /* BasePickView.h */,
@@ -400,6 +406,7 @@
 				79D1EBB91AEF2D71004DF70D /* SDImageCache.h in Headers */,
 				79D1EB751AEF1C6C004DF70D /* BaseScrollView.h in Headers */,
 				79D1EBBB1AEF2D71004DF70D /* SDWebImageDecoder.h in Headers */,
+				7997FC8A1AF0C3F900A3FB78 /* YZMtextfield.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +536,7 @@
 				79D1EBB31AEF2D71004DF70D /* UIImage+WebP.m in Sources */,
 				79D1EBAE1AEF2D71004DF70D /* SDWebImageManager.m in Sources */,
 				79D1EBA81AEF2D71004DF70D /* NSData+ImageContentType.m in Sources */,
+				7997FC8B1AF0C3F900A3FB78 /* YZMtextfield.m in Sources */,
 				79D1EB561AEF1C6C004DF70D /* BaseAlertView.m in Sources */,
 				79D1EB661AEF1C6C004DF70D /* BaseWebViewController.m in Sources */,
 				79D1EB671AEF1C6C004DF70D /* GroupedTableViewController.m in Sources */,
