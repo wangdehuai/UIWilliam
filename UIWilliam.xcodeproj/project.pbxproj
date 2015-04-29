@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7986E4B51AF0B186007AE53F /* BasePickView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7986E4B31AF0B186007AE53F /* BasePickView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7986E4B61AF0B186007AE53F /* BasePickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7986E4B41AF0B186007AE53F /* BasePickView.m */; };
+		79886CCA1AF0BA2200E42B86 /* BasePickView.h in Headers */ = {isa = PBXBuildFile; fileRef = 79886CC81AF0BA2200E42B86 /* BasePickView.h */; };
+		79886CCB1AF0BA2200E42B86 /* BasePickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79886CC91AF0BA2200E42B86 /* BasePickView.m */; };
 		79D1EB141AEF1C0C004DF70D /* UIWilliam.h in Headers */ = {isa = PBXBuildFile; fileRef = 79D1EB131AEF1C0C004DF70D /* UIWilliam.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79D1EB1A1AEF1C0C004DF70D /* UIWilliam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D1EB0E1AEF1C0C004DF70D /* UIWilliam.framework */; };
 		79D1EB211AEF1C0C004DF70D /* UIWilliamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D1EB201AEF1C0C004DF70D /* UIWilliamTests.m */; };
@@ -101,8 +101,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7986E4B31AF0B186007AE53F /* BasePickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasePickView.h; sourceTree = "<group>"; };
-		7986E4B41AF0B186007AE53F /* BasePickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasePickView.m; sourceTree = "<group>"; };
+		79886CC81AF0BA2200E42B86 /* BasePickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasePickView.h; path = base/BasePickView.h; sourceTree = "<group>"; };
+		79886CC91AF0BA2200E42B86 /* BasePickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasePickView.m; path = base/BasePickView.m; sourceTree = "<group>"; };
 		79D1EB0E1AEF1C0C004DF70D /* UIWilliam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIWilliam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79D1EB121AEF1C0C004DF70D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79D1EB131AEF1C0C004DF70D /* UIWilliam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIWilliam.h; sourceTree = "<group>"; };
@@ -306,8 +306,8 @@
 				79D1EB3A1AEF1C6C004DF70D /* BaseTextField.m */,
 				79D1EB411AEF1C6C004DF70D /* BaseAlertView.h */,
 				79D1EB2C1AEF1C6C004DF70D /* BaseAlertView.m */,
-				7986E4B31AF0B186007AE53F /* BasePickView.h */,
-				7986E4B41AF0B186007AE53F /* BasePickView.m */,
+				79886CC81AF0BA2200E42B86 /* BasePickView.h */,
+				79886CC91AF0BA2200E42B86 /* BasePickView.m */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -360,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79D1EB741AEF1C6C004DF70D /* BasePageControl.h in Headers */,
+				79886CCA1AF0BA2200E42B86 /* BasePickView.h in Headers */,
 				79D1EB6E1AEF1C6C004DF70D /* BaseLabel.h in Headers */,
 				79D1EB761AEF1C6C004DF70D /* BaseSegmentedControl.h in Headers */,
 				79D1EB7E1AEF1C6C004DF70D /* PlainTableViewController.h in Headers */,
@@ -381,7 +382,6 @@
 				79D1EB7B1AEF1C6C004DF70D /* BaseWebViewController.h in Headers */,
 				79D1EB6B1AEF1C6C004DF70D /* BaseAlertView.h in Headers */,
 				79D1EB6F1AEF1C6C004DF70D /* BaseLine.h in Headers */,
-				7986E4B51AF0B186007AE53F /* BasePickView.h in Headers */,
 				79D1EBC21AEF2D71004DF70D /* UIImage+GIF.h in Headers */,
 				79D1EB6D1AEF1C6C004DF70D /* BaseButton.h in Headers */,
 				79D1EB7D1AEF1C6C004DF70D /* NavLogoView.h in Headers */,
@@ -504,6 +504,7 @@
 				79D1EBA71AEF2D71004DF70D /* MKAnnotationView+WebCache.m in Sources */,
 				79D1EB5C1AEF1C6C004DF70D /* BaseMD5.m in Sources */,
 				79D1EB5D1AEF1C6C004DF70D /* BaseModel.m in Sources */,
+				79886CCB1AF0BA2200E42B86 /* BasePickView.m in Sources */,
 				79D1EB591AEF1C6C004DF70D /* BaseLabel.m in Sources */,
 				79D1EB5A1AEF1C6C004DF70D /* BaseLine.m in Sources */,
 				79D1EB611AEF1C6C004DF70D /* BaseSegmentedControl.m in Sources */,
@@ -511,7 +512,6 @@
 				79D1EBA91AEF2D71004DF70D /* SDImageCache.m in Sources */,
 				79D1EBB21AEF2D71004DF70D /* UIImage+MultiFormat.m in Sources */,
 				79D1EBB11AEF2D71004DF70D /* UIImage+GIF.m in Sources */,
-				7986E4B61AF0B186007AE53F /* BasePickView.m in Sources */,
 				79D1EBAC1AEF2D71004DF70D /* SDWebImageDownloader.m in Sources */,
 				79D1EB681AEF1C6C004DF70D /* NavLogoView.m in Sources */,
 				79D1EBB51AEF2D71004DF70D /* UIImageView+WebCache.m in Sources */,
